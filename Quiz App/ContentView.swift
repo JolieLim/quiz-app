@@ -48,7 +48,7 @@ struct ContentView: View {
             
             Text(questions[currentQuestion].title)
                 .padding()
-                .foregroundColor(.blue)
+                .foregroundColor(.black)
             HStack {
                 VStack {
                     Button {
