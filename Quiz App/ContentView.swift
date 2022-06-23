@@ -48,7 +48,7 @@ struct ContentView: View {
             
             Text(questions[currentQuestion].title)
                 .padding()
-                .foregroundColor(.black)
+                .foregroundColor(.white)
             HStack {
                 VStack {
                     Button {
@@ -60,7 +60,7 @@ struct ContentView: View {
                     .frame(width: 100.0, height: 50.0)
                     .background(.green)
                     .cornerRadius(5)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     Button {
                         TapOption(optionNumber: 2)
                     } label: {
@@ -70,7 +70,7 @@ struct ContentView: View {
                     .frame(width: 100.0, height: 50.0)
                     .background(.yellow)
                     .cornerRadius(5)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                 }
                 .padding()
                 VStack {
@@ -83,7 +83,7 @@ struct ContentView: View {
                     .frame(width: 100.0, height: 50.0)
                     .background(.cyan)
                     .cornerRadius(5)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     Button {
                         TapOption(optionNumber: 4)
                     } label: {
@@ -93,7 +93,7 @@ struct ContentView: View {
                     .frame(width: 100.0, height: 50.0)
                     .background(.gray)
                     .cornerRadius(5)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                     
                 }
                 .padding()
@@ -139,5 +139,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }
